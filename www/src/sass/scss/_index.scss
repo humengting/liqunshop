@@ -1,5 +1,6 @@
 
 #container{
   @include setSize( $page-width , 4613px , #fff );
-    padding:0 70px ;
+  padding:0 70px ;
+  margin: 0 auto;
 }

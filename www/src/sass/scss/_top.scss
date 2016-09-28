@@ -1,3 +1,6 @@
+.head{
+  border-bottom: 2px solid $deepRed;
+}
 .headTop{
  @include setSize($page-width , 70px ,black );
   .topImg{
@@ -103,7 +106,7 @@
 }
 .headNav{
     width: 1339px;
-    border-bottom: 2px solid $deepRed;
+    //border-bottom: 2px solid $deepRed;
     @include setSize($page-width , 35px);
     .first{
       @include setSize(190px , 35px ,$deepRed);

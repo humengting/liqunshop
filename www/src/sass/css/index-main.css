@@ -35,6 +35,10 @@ img, input, button {
   clear: both;
 }
 
+.head {
+  border-bottom: 2px solid #b1191b;
+}
+
 .headTop {
   width: 1199px;
   height: 70px;
@@ -178,7 +182,6 @@ img, input, button {
 
 .headNav {
   width: 1339px;
-  border-bottom: 2px solid #b1191b;
   width: 1199px;
   height: 35px;
   background-color: #fff;
@@ -216,6 +219,7 @@ img, input, button {
   background-color: #fff;
   line-height: 4613px;
   padding: 0 70px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index-main.css.map */
