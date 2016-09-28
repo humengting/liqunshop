@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #b1191b;
+}
+
+ul, ol li {
+  list-style: none;
+}
+
+img, input, button {
+  border: none;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.headTop {
+  width: 1199px;
+  height: 70px;
+  background-color: black;
+  line-height: 70px;
+}
+.headTop .topImg {
+  width: 1199px;
+  height: 70px;
+  background-color: #fff;
+  line-height: 70px;
+}
+
+.headInfo {
+  width: 1199px;
+  height: 25px;
+  background-color: #fff;
+  line-height: 25px;
+  color: #777;
+}
+.headInfo a {
+  color: #777;
+}
+.headInfo a:hover {
+  color: #b1191b;
+}
+
+.headInfoRight {
+  float: right;
+  height: 12px;
+}
+.headInfoRight li {
+  float: left;
+  height: 12px;
+}
+.headInfoRight li img {
+  vertical-align: middle;
+}
+.headInfoRight a {
+  height: 12px;
+  padding: 0  15px;
+  border-right: 1px solid #777;
+}
+.headInfoRight a.end {
+  border-right: none;
+}
+
+.headLogo {
+  position: relative;
+  width: 1199px;
+  height: 100px;
+  background-color: #fff;
+  line-height: 100px;
+}
+.headLogo img {
+  vertical-align: middle;
+}
+.headLogo .search {
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.headLogo .searchTop {
+  width: 530px;
+  height: 100%;
+  background-color: #fff;
+  line-height: 100%;
+}
+.headLogo .searchTop img {
+  border: 3px solid #fc595a;
+  border-right: none;
+  float: left;
+}
+.headLogo .searchTop input {
+  width: 400px;
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+  border: 3px solid #fc595a;
+  border-left: none;
+  float: left;
+}
+.headLogo .searchTop button {
+  float: left;
+  width: 82px;
+  height: 41px;
+  background-color: #fc595a;
+  line-height: 41px;
+  border: 3px solid #fc595a;
+  line-height: 35px;
+  border-left: none;
+  letter-spacing: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.headLogo .headLogoRight {
+  display: inline-block;
+  position: relative;
+}
+.headLogo .headLogoRight .logoImgSet {
+  margin-top: -30px;
+  margin-right: 20px;
+}
+.headLogo .headLogoRight .logoImgSet2 {
+  margin-top: -30px;
+}
+.headLogo .headLogoRight .cartCountImg {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
+.headLogo .headLogoRight .cartCountSpan {
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  line-height: 21px;
+  background: url("../../images/cartCount.png") no-repeat;
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+.headLogo .searchBottom {
+  height: 20px;
+  top: 25px;
+  position: absolute;
+}
+.headLogo .searchBottom li {
+  float: left;
+  margin-left: 10px;
+}
+.headLogo .searchBottom a {
+  color: #777;
+}
+.headLogo .searchBottom a:hover {
+  color: #b1191b;
+}
+
+.headNav {
+  width: 1199px;
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+}
+.headNav .first {
+  width: 190px;
+  height: 35px;
+  background-color: #b1191b;
+  line-height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.headNav .home a {
+  color: #f13031;
+}
+.headNav li {
+  float: left;
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#container {
+  width: 1199px;
+  height: 4613px;
+  background-color: #fff;
+  line-height: 4613px;
+  padding: 0 70px;
+}
+
+/*# sourceMappingURL=index-main.css.map */

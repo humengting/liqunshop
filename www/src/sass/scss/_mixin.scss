@@ -1,0 +1,16 @@
+@mixin setSize ( $sizeWidth:100% , $sizeHeight:100% ,$backgroundColor:#fff) {
+    width: $sizeWidth;
+    height: $sizeHeight;
+    background-color: $backgroundColor;
+    line-height: $sizeHeight;
+}
+
+@mixin linkColor( $nomal  , $hover ){
+    color: $nomal;
+    &:hover{ color: $hover;}
+}
+
+@mixin opacity ( $opacity :50 ){
+    opacity: $opacity / 100 ;
+   filter: alpha(opacity = $opacity);
+}
