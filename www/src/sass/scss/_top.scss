@@ -102,6 +102,8 @@
   }
 }
 .headNav{
+    width: 1339px;
+    border-bottom: 2px solid $deepRed;
     @include setSize($page-width , 35px);
     .first{
       @include setSize(190px , 35px ,$deepRed);
@@ -120,5 +122,8 @@
     @include setSize(100px,35px);
     text-align: center;
     cursor: pointer;
+  }
+  .headSign{
+    float: right;
   }
 }

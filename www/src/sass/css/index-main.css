@@ -177,6 +177,8 @@ img, input, button {
 }
 
 .headNav {
+  width: 1339px;
+  border-bottom: 2px solid #b1191b;
   width: 1199px;
   height: 35px;
   background-color: #fff;
@@ -203,6 +205,9 @@ img, input, button {
   line-height: 35px;
   text-align: center;
   cursor: pointer;
+}
+.headNav .headSign {
+  float: right;
 }
 
 #container {
