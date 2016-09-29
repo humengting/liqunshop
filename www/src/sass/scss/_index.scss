@@ -1,6 +1,80 @@
 
 #container{
   @include setSize( $page-width , 4613px , #fff );
-  padding:0 70px ;
+  //padding:0 70px ;
   margin: 0 auto;
+}
+.nav{
+  padding: 0 70px;
+  .leftnav{
+    float: left;
+    @include setSize(190px , 451px , $navColor );
+    color: #ffffff;
+    dl{
+      height: 49px; padding-left: 25px;
+      span{ float: right;}
+      &:hover{ background-color: $deepRed;}
+    }
+    dt{ font-size: 14px; font-weight: bold; line-height: 30px;}
+    dd{ line-height: 15px; float: left; margin-right: 5px;
+        &:hover{ text-decoration: underline;}
+    }
+  }
+  .navMiddle{
+    float: left;
+    @include setSize(740px , 445px , $navColor );
+    margin-top: 5px;
+    margin-left: 8px;
+  }
+  .navRight{
+    position: relative;
+    float: left;
+    @include setSize(251px , 451px);
+    margin-left: 10px;
+    line-height: 23px;
+    .navTop{
+      @include setSize(251px , 251px);
+      padding-left: 12px;
+      background: url("../../images/navRight_top.jpg") no-repeat;
+      a{ @include linkColor($lightGray,$deepRed)}
+     .first{
+       font-size: 14px; font-weight: bold; color: $lightGray;
+       padding-top: 15px;
+       line-height: 35px;
+     }
+      img{
+        vertical-align: middle;
+      }
+      .red{ color: $paleRed;}
+    }
+    .middleNav{
+      @include setSize(251px , 32px , #ededed);
+      position: absolute;
+      left: 0;
+      ul{
+        float: right;
+        margin-right: 10px;
+        line-height: 32px;
+      }
+      li{
+        width: 10px; height: 10px;
+        float: left;
+        margin-right: 10px;
+        border-radius: 50%;
+        margin-top: 14px;
+        background-color: $lightGray;
+      }
+      .first{
+        background-color: $paleGray;
+      }
+    }
+    .navButtom{
+      position: absolute;
+      bottom: 2px;
+      border: 1px solid #ccc;
+      border-top: none;
+      @include setSize(251px , 166px  );
+    }
+  }
+
 }

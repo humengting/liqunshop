@@ -1,14 +1,19 @@
 .head{
+
+  width: $page-width;
   border-bottom: 2px solid $deepRed;
 }
+.marginLeft{
+    margin-left: 70px;
+}
 .headTop{
- @include setSize($page-width , 70px ,black );
+ @include setType($self-width , 70px ,black );
   .topImg{
-    @include setSize( 1199px  ,70px);
+    @include setType( 1199px  ,70px);
   }
 }
 .headInfo{
-  @include setSize( $page-width ,  25px);
+  @include setType( $self-width ,  25px);
   color: $lightGray;
   a{
     @include linkColor( $lightGray,#b1191b)
@@ -34,7 +39,7 @@
 
 .headLogo{
   position: relative;
-  @include setSize($page-width , 100px);
+  @include setType($self-width , 100px);
   img{ vertical-align: middle; }
   .search{
     display: inline-block;
@@ -42,14 +47,14 @@
     padding-top: 15px ;
   }
   .searchTop{
-    @include setSize(530px );
+    @include setType(530px );
     img{
       border: 3px solid $paleRed;
       border-right: none;
       float: left;
     }
     input{
-      @include setSize(400px ,35px );
+      @include setType(400px ,35px );
       //background: url("../../images/headSearch.jpg") no-repeat;
       border: 3px solid $paleRed;
       border-left: none;
@@ -57,7 +62,7 @@
     }
     button{
       float: left;
-      @include setSize( 82px , 41px ,$paleRed );
+      @include setType( 82px , 41px ,$paleRed );
       border: 3px solid $paleRed;
       line-height: 35px;
       border-left: none;
@@ -82,7 +87,7 @@
       left: 16px;
     }
     .cartCountSpan{
-      @include setSize( 21px , 21px );
+      @include setType( 21px , 21px );
       background: url("../../images/cartCount.png") no-repeat;
       position: absolute;
       top:9px;
@@ -106,10 +111,10 @@
 }
 .headNav{
     width: 1339px;
-    //border-bottom: 2px solid $deepRed;
-    @include setSize($page-width , 35px);
+
+    @include setType($self-width , 35px);
     .first{
-      @include setSize(190px , 35px ,$deepRed);
+      @include setType(190px , 35px ,$deepRed);
       font-size: 15px;
       font-weight: bold;
       text-align: center;
@@ -122,7 +127,7 @@
   }
   li{
     float: left;
-    @include setSize(100px,35px);
+    @include setType(100px,35px);
     text-align: center;
     cursor: pointer;
   }

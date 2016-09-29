@@ -2,6 +2,12 @@
     width: $sizeWidth;
     height: $sizeHeight;
     background-color: $backgroundColor;
+}
+
+@mixin setType ( $sizeWidth:100% , $sizeHeight:100% ,$backgroundColor:#fff) {
+    width: $sizeWidth;
+    height: $sizeHeight;
+    background-color: $backgroundColor;
     line-height: $sizeHeight;
 }
 

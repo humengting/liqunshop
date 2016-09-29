@@ -36,7 +36,12 @@ img, input, button {
 }
 
 .head {
+  width: 1339px;
   border-bottom: 2px solid #b1191b;
+}
+
+.marginLeft {
+  margin-left: 70px;
 }
 
 .headTop {
@@ -214,12 +219,120 @@ img, input, button {
 }
 
 #container {
-  width: 1199px;
+  width: 1339px;
   height: 4613px;
   background-color: #fff;
-  line-height: 4613px;
-  padding: 0 70px;
   margin: 0 auto;
+}
+
+.nav {
+  padding: 0 70px;
+}
+.nav .leftnav {
+  float: left;
+  width: 190px;
+  height: 451px;
+  background-color: #c81622;
+  color: #ffffff;
+}
+.nav .leftnav dl {
+  height: 49px;
+  padding-left: 25px;
+}
+.nav .leftnav dl span {
+  float: right;
+}
+.nav .leftnav dl:hover {
+  background-color: #b1191b;
+}
+.nav .leftnav dt {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.nav .leftnav dd {
+  line-height: 15px;
+  float: left;
+  margin-right: 5px;
+}
+.nav .leftnav dd:hover {
+  text-decoration: underline;
+}
+.nav .navMiddle {
+  float: left;
+  width: 740px;
+  height: 445px;
+  background-color: #c81622;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.nav .navRight {
+  position: relative;
+  float: left;
+  width: 251px;
+  height: 451px;
+  background-color: #fff;
+  margin-left: 10px;
+  line-height: 23px;
+}
+.nav .navRight .navTop {
+  width: 251px;
+  height: 251px;
+  background-color: #fff;
+  padding-left: 12px;
+  background: url("../../images/navRight_top.jpg") no-repeat;
+}
+.nav .navRight .navTop a {
+  color: #777;
+}
+.nav .navRight .navTop a:hover {
+  color: #b1191b;
+}
+.nav .navRight .navTop .first {
+  font-size: 14px;
+  font-weight: bold;
+  color: #777;
+  padding-top: 15px;
+  line-height: 35px;
+}
+.nav .navRight .navTop img {
+  vertical-align: middle;
+}
+.nav .navRight .navTop .red {
+  color: #fc595a;
+}
+.nav .navRight .middleNav {
+  width: 251px;
+  height: 32px;
+  background-color: #ededed;
+  position: absolute;
+  left: 0;
+}
+.nav .navRight .middleNav ul {
+  float: right;
+  margin-right: 10px;
+  line-height: 32px;
+}
+.nav .navRight .middleNav li {
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-top: 14px;
+  background-color: #777;
+}
+.nav .navRight .middleNav .first {
+  background-color: #dedede;
+}
+.nav .navRight .navButtom {
+  position: absolute;
+  bottom: 2px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 251px;
+  height: 166px;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=index-main.css.map */
