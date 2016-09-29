@@ -64,6 +64,8 @@
       float: left;
       @include setType( 82px , 41px ,$paleRed );
       border: 3px solid $paleRed;
+      color: #ffffff;
+      font-weight: bold;
       line-height: 35px;
       border-left: none;
       letter-spacing: 10px;

@@ -1,3 +1,7 @@
+.floatL {
+  float: left;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -133,6 +137,8 @@ img, input, button {
   background-color: #fc595a;
   line-height: 41px;
   border: 3px solid #fc595a;
+  color: #ffffff;
+  font-weight: bold;
   line-height: 35px;
   border-left: none;
   letter-spacing: 10px;
@@ -216,6 +222,21 @@ img, input, button {
 }
 .headNav .headSign {
   float: right;
+}
+
+.footBottom {
+  width: 1199px;
+  height: 488px;
+  background-color: red;
+  clear: both;
+  padding: 0 70px;
+}
+.footBottom .footBottomTop {
+  width: 1199px;
+  height: 165px;
+  background-color: #ccc;
+  padding-left: 21px;
+  padding-top: 25px;
 }
 
 #container {
@@ -305,13 +326,9 @@ img, input, button {
   width: 251px;
   height: 32px;
   background-color: #ededed;
-  position: absolute;
-  left: 0;
 }
 .nav .navRight .middleNav ul {
   float: right;
-  margin-right: 10px;
-  line-height: 32px;
 }
 .nav .navRight .middleNav li {
   width: 10px;
@@ -326,13 +343,256 @@ img, input, button {
   background-color: #dedede;
 }
 .nav .navRight .navButtom {
-  position: absolute;
-  bottom: 2px;
   border: 1px solid #ccc;
   border-top: none;
-  width: 251px;
+  width: 249px;
   height: 166px;
   background-color: #fff;
+}
+
+.main {
+  width: 1199px;
+  height: auto;
+  background-color: #ccc;
+  padding: 0 70px;
+  padding-top: 10px;
+  clear: both;
+}
+.main .mainTop {
+  width: 1199px;
+  height: 752px;
+  background-color: #fff;
+}
+.main .main-top-nav {
+  width: 1199px;
+  height: 136px;
+  background-color: #fff;
+}
+.main .main-top-nav .nav-left {
+  float: left;
+  width: 190px;
+  height: 134px;
+  background-color: #fff;
+}
+.main .main-top-nav .nav-right {
+  width: 1006px;
+  height: 134px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-left: 1px;
+  float: left;
+}
+.main .main-top-main {
+  margin-top: 25px;
+  width: 1199px;
+  height: 499px;
+  background-color: #fff;
+}
+.main .main-top-main .main-top-scroll {
+  width: 796px;
+  height: 499px;
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+.main .main-top-main .main-top-right {
+  width: 192px;
+  height: 499px;
+  background-color: #fff;
+  margin-left: 15px;
+}
+.main .main-floor {
+  padding-top: 3px;
+  width: 1199px;
+  height: auto;
+  background-color: #adc;
+}
+.main .main-floor .floorleft {
+  width: 193px;
+  height: 423px;
+  background-color: #fff;
+  position: relative;
+}
+.main .main-floor .floorleft .content {
+  margin-left: 8px;
+}
+.main .main-floor .floorleft .content span {
+  display: inline-block;
+  float: left;
+  line-height: 30px;
+  width: 92px;
+  height: 30px;
+  background-color: #fff;
+}
+.main .main-floor .floorleft .floorlfet-buttom {
+  width: 191px;
+  height: 145px;
+  background-color: #fff;
+  clear: both;
+  position: absolute;
+  bottom: 0;
+}
+.main .main-floor .floorleft .floorlfet-buttom ul {
+  position: absolute;
+  bottom: 6px;
+  left: 11px;
+}
+.main .main-floor .floorleft .floorlfet-buttom ul .floorfirstli {
+  background-color: #fefcfd;
+}
+.main .main-floor .floorleft .floorlfet-buttom li {
+  width: 10px;
+  height: 10px;
+  background-color: #777;
+  border-radius: 50%;
+  float: left;
+  margin-right: 14px;
+}
+.main .main-floor .floorMiddle {
+  width: 283px;
+  height: 423px;
+  background-color: #fff;
+  position: relative;
+}
+.main .main-floor .floorMiddle ul {
+  position: absolute;
+  bottom: 26px;
+  left: 29px;
+}
+.main .main-floor .floorMiddle ul .floorfirstli {
+  background-color: #fefcfd;
+}
+.main .main-floor .floorMiddle li {
+  width: 70px;
+  height: 7px;
+  background-color: #777;
+  float: left;
+  margin-right: 5px;
+}
+
+.floorNav {
+  width: 721px;
+  height: 421px;
+  background-color: #fff;
+}
+.floorNav .top {
+  width: 720px;
+  height: 40px;
+  background-color: #fff;
+  background: url("../../images/topbg.jpg") repeat-x bottom;
+}
+.floorNav .top ul {
+  line-height: 37px;
+}
+.floorNav .top li {
+  float: left;
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.floorNav .top .redfont {
+  color: #b1191b;
+}
+.floorNav .top .lihover {
+  background: url("../../images/libag.jpg") repeat-x bottom;
+  border-bottom: 3px solid #b1191b;
+}
+.floorNav .first {
+  margin-left: 38px;
+}
+.floorNav .bottom {
+  width: 720px;
+  height: 383px;
+  background-color: #fff;
+}
+.floorNav .bottom .left {
+  width: 593px;
+  height: 383px;
+  background-color: #fff;
+}
+.floorNav .bottom .left dl {
+  width: 196px;
+  height: 191px;
+  background-color: #fff;
+  float: left;
+  line-height: 20px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.floorNav .bottom .left dl dt {
+  width: 188px;
+  height: 143px;
+  background-color: #fff;
+  background: url("../../images/floorNavPhoto1.jpg") no-repeat top;
+}
+.floorNav .bottom .left a {
+  color: #777;
+  margin-left: 17px;
+  line-height: 24px;
+}
+.floorNav .bottom .left dd {
+  color: #ff0000;
+  float: left;
+  margin-left: 17px;
+}
+.floorNav .bottom .left span {
+  width: 34px;
+  height: 16px;
+  background-color: #ccc;
+  text-align: center;
+  color: #fff;
+  float: right;
+  line-height: 16px;
+  margin-right: 4px;
+  border-radius: 20%;
+}
+.floorNav .bottom .left .navdt2 {
+  background-position: 0px -143px;
+}
+.floorNav .bottom .left .navdt3 {
+  background-position: 0 -286px;
+}
+.floorNav .bottom .left .navdt4 {
+  background-position: 0 -429px;
+}
+.floorNav .bottom .left .navdt5 {
+  background-position: 0 -572px;
+}
+.floorNav .bottom .left .navdt6 {
+  background-position: 0 -715px;
+}
+.floorNav .bottom .right {
+  width: 116px;
+  height: 383px;
+  background-color: #fff;
+  padding: 0  5px;
+}
+.floorNav .bottom .right a {
+  width: 118px;
+  height: 54px;
+  background-color: #fff;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  background: url("../../images/floorNavPhoto2.jpg") top;
+}
+.floorNav .bottom .right .end {
+  border-bottom: none;
+  background-position: 0 -318px;
+}
+.floorNav .bottom .right .a2 {
+  background-position: 0 -53px;
+}
+.floorNav .bottom .right .a3 {
+  background-position: 0 -106px;
+}
+.floorNav .bottom .right .a4 {
+  background-position: 0 -159px;
+}
+.floorNav .bottom .right .a5 {
+  background-position: 0 -212px;
+}
+.floorNav .bottom .right .a6 {
+  background-position: 0 -265px;
 }
 
 /*# sourceMappingURL=index-main.css.map */

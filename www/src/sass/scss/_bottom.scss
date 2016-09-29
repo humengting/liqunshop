@@ -1,0 +1,10 @@
+.footBottom{
+  @include setSize($self-width, 488px ,red );
+  clear: both;
+  padding: 0 70px;
+  .footBottomTop{
+    @include setSize($self-width, 165px ,#ccc );
+    padding-left: 21px;
+    padding-top: 25px;
+  }
+}

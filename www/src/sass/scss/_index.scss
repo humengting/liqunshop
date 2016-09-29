@@ -49,12 +49,8 @@
     }
     .middleNav{
       @include setSize(251px , 32px , #ededed);
-      position: absolute;
-      left: 0;
       ul{
         float: right;
-        margin-right: 10px;
-        line-height: 32px;
       }
       li{
         width: 10px; height: 10px;
@@ -69,12 +65,181 @@
       }
     }
     .navButtom{
-      position: absolute;
-      bottom: 2px;
       border: 1px solid #ccc;
       border-top: none;
-      @include setSize(251px , 166px  );
+      @include setSize(249px , 166px  );
     }
   }
 
+}
+.main{
+  @include setSize($self-width , auto , #ccc);
+  padding: 0 70px;
+  padding-top: 10px;
+  clear: both;
+  .mainTop{
+    @include setSize($self-width , 752px);
+  }
+  .main-top-nav{
+    @include setSize($self-width , 136px);
+    .nav-left{
+      float: left;
+      @include setSize(190px , 134px);
+    }
+    .nav-right{
+      @include setSize(1006px , 134px);
+      border: 1px solid #ccc;
+      margin-left: 1px;
+      float: left;
+    }
+
+  }
+
+  .main-top-main{
+    margin-top: 25px;
+    @include setSize($self-width , 499px);
+    .main-top-scroll{
+      @include setSize(796px , 499px);
+      margin-bottom: 12px;
+    }
+    .main-top-right{
+      @include setSize(192px , 499px);
+      margin-left: 15px;
+    }
+  }
+  .main-floor{
+
+    padding-top: 3px;
+    @include setSize($self-width , auto , #adc);
+    .floorleft{
+      @include setSize(193px , 423px );
+      position: relative;
+      .content{
+        margin-left: 8px;
+        span{
+          display:inline-block;
+          float: left;
+          line-height: 30px;
+          @include setSize(92px , 30px );
+        }
+      }
+
+      .floorlfet-buttom{
+        @include setSize(191px , 145px );
+        clear: both;
+        position: absolute;
+        bottom: 0;
+        ul{
+          position: absolute;
+          bottom: 6px;
+          left: 11px;
+          .floorfirstli{
+            background-color: $floorColor;
+          }
+        }
+        li{
+          @include setSize(10px , 10px , $lightGray);
+          border-radius: 50%;
+          float: left;
+          margin-right: 14px;
+        }
+      }
+    }
+    .floorMiddle{
+      @include setSize(283px , 423px );
+      position: relative;
+      ul{
+        position: absolute;
+        bottom:26px;
+        left: 29px;
+        .floorfirstli{
+          background-color: $floorColor;
+        }
+      }
+      li{
+        @include setSize(70px , 7px , $lightGray);
+        float: left;
+        margin-right: 5px;
+      }
+
+    }
+  }
+}
+.floorNav{
+  @include setSize(721px ,421px);
+  .top{
+    @include setSize(720px, 40px );
+    //border-bottom: 3px solid $lightGray;
+    background: url("../../images/topbg.jpg") repeat-x bottom;
+    ul{
+      line-height:37px;
+    }
+    li{
+      float: left;
+      padding:  0 14px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+    .redfont{
+      color: $deepRed;
+    }
+    .lihover{
+      background: url("../../images/libag.jpg") repeat-x bottom;
+      border-bottom: 3px solid $deepRed;
+    }
+  }
+
+  .first{
+    margin-left: 38px;
+
+  }
+  .bottom{
+    @include setSize(720px, 383px);
+    .left{
+      @include setSize(593px, 383px  );
+      dl{
+        @include setSize(196px, 191px );
+        float: left;
+        line-height: 20px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        dt{
+          @include setSize(188px, 143px  );
+          background: url("../../images/floorNavPhoto1.jpg") no-repeat top}
+      }
+      a{ color: $lightGray; margin-left: 17px;line-height: 24px;}
+      dd{ color: $brigtColor; float: left;margin-left: 17px;}
+      span{
+        @include setSize(34px, 16px ,#ccc );
+        text-align: center;
+        color: #fff;
+        float: right;
+        line-height: 16px;
+        margin-right: 4px;
+        border-radius: 20%;
+      }
+      .navdt2{ background-position: 0px -143px;}
+      .navdt3{ background-position:  0 -286px;}
+      .navdt4{ background-position:  0 -429px;}
+      .navdt5{ background-position:  0 -572px;}
+      .navdt6{ background-position:  0 -715px;}
+    }
+    .right{
+        @include setSize(116px, 383px);
+        padding: 0  5px;
+        a{
+          @include setSize(118px ,54px);
+          display: block;
+          border-bottom: 1px solid #ccc;
+          background: url("../../images/floorNavPhoto2.jpg") top ;
+        }
+      .end{border-bottom: none;background-position: 0 -318px;}
+      .a2{ background-position: 0 -53px;}
+      .a3{ background-position: 0 -106px;}
+      .a4{ background-position: 0 -159px;}
+      .a5{ background-position: 0 -212px;}
+      .a6{ background-position: 0 -265px;}
+    }
+  }
 }
