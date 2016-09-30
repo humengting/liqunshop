@@ -356,14 +356,14 @@ img, input, button {
 .nav .navRight {
   position: relative;
   float: left;
-  width: 251px;
+  width: 252px;
   height: 451px;
   background-color: #fff;
-  margin-left: 10px;
+  margin-left: 9px;
   line-height: 23px;
 }
 .nav .navRight .navTop {
-  width: 251px;
+  width: 252px;
   height: 251px;
   background-color: #fff;
   padding-left: 12px;
@@ -389,8 +389,8 @@ img, input, button {
   color: #fc595a;
 }
 .nav .navRight .middleNav {
-  width: 251px;
-  height: 32px;
+  width: 252px;
+  height: 30px;
   background-color: #ededed;
 }
 .nav .navRight .middleNav ul {
@@ -402,7 +402,7 @@ img, input, button {
   float: left;
   margin-right: 10px;
   border-radius: 50%;
-  margin-top: 14px;
+  margin-top: 13px;
   background-color: #777;
 }
 .nav .navRight .middleNav .first {
@@ -411,8 +411,8 @@ img, input, button {
 .nav .navRight .navButtom {
   border: 1px solid #ccc;
   border-top: none;
-  width: 249px;
-  height: 166px;
+  width: 250px;
+  height: 168px;
   background-color: #fff;
 }
 
