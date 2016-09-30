@@ -1,10 +1,32 @@
 .footBottom{
-  @include setSize($self-width, 488px ,red );
+  @include setSize($self-width, 488px  );
   clear: both;
   padding: 0 70px;
+  overflow: hidden;
   .footBottomTop{
-    @include setSize($self-width, 165px ,#ccc );
-    padding-left: 21px;
+    @include setSize($self-width, 165px  );
+    padding-left: 20px;
     padding-top: 25px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    ul{
+      @include setSize(130px, 136px );
+      a{ margin:8px; line-height: 22px; color: $lightGray;}
+      float: left;
+      margin-right: 40px;
+    }
+    h3{
+      color: $paleGray;
+      border-bottom: 1px solid #ccc;
+      line-height: 25px;
+    }
+    li{
+        margin-left: 20px;
+        color: $lightGray;
+        img{ margin-top: 10px;}
+    }
+  }
+  .footBottom-bottom{
+
   }
 }

@@ -18,13 +18,16 @@
   a{
     @include linkColor( $lightGray,#b1191b)
   }
+
 }
 .headInfoRight{
+    position: relative;
     float: right;
     height: 12px;
   li{
     float: left;
     height: 12px;
+    position: relative;
     img{
       vertical-align: middle;
     }
@@ -34,6 +37,14 @@
     padding: 0  15px;
     border-right: 1px solid $lightGray;
     &.end{ border-right: none; }
+  }
+  .peopleService{
+    padding: 0  15px;
+     ul{ border: 1px solid #ccc; position: absolute; z-index: 11;}
+      li{ float: none; line-height: 25px; margin-bottom: 10px;
+        padding: 0  15px; width: 79px;
+      }
+
   }
 }
 

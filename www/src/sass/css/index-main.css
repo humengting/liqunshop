@@ -76,12 +76,14 @@ img, input, button {
 }
 
 .headInfoRight {
+  position: relative;
   float: right;
   height: 12px;
 }
 .headInfoRight li {
   float: left;
   height: 12px;
+  position: relative;
 }
 .headInfoRight li img {
   vertical-align: middle;
@@ -93,6 +95,21 @@ img, input, button {
 }
 .headInfoRight a.end {
   border-right: none;
+}
+.headInfoRight .peopleService {
+  padding: 0  15px;
+}
+.headInfoRight .peopleService ul {
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 11;
+}
+.headInfoRight .peopleService li {
+  float: none;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding: 0  15px;
+  width: 79px;
 }
 
 .headLogo {
@@ -227,16 +244,43 @@ img, input, button {
 .footBottom {
   width: 1199px;
   height: 488px;
-  background-color: red;
+  background-color: #fff;
   clear: both;
   padding: 0 70px;
+  overflow: hidden;
 }
 .footBottom .footBottomTop {
   width: 1199px;
   height: 165px;
-  background-color: #ccc;
-  padding-left: 21px;
+  background-color: #fff;
+  padding-left: 20px;
   padding-top: 25px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+.footBottom .footBottomTop ul {
+  width: 130px;
+  height: 136px;
+  background-color: #fff;
+  float: left;
+  margin-right: 40px;
+}
+.footBottom .footBottomTop ul a {
+  margin: 8px;
+  line-height: 22px;
+  color: #777;
+}
+.footBottom .footBottomTop h3 {
+  color: #dedede;
+  border-bottom: 1px solid #ccc;
+  line-height: 25px;
+}
+.footBottom .footBottomTop li {
+  margin-left: 20px;
+  color: #777;
+}
+.footBottom .footBottomTop li img {
+  margin-top: 10px;
 }
 
 #container {
@@ -286,6 +330,28 @@ img, input, button {
   background-color: #c81622;
   margin-top: 5px;
   margin-left: 8px;
+  position: relative;
+}
+.nav .navMiddle .navMiddleSelect {
+  position: absolute;
+  left: 275px;
+  bottom: 10px;
+}
+.nav .navMiddle .navMiddleSelect li {
+  float: left;
+  margin-right: 6px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #777;
+  cursor: pointer;
+  line-height: 20px;
+  text-align: center;
+  color: #dedede;
+}
+.nav .navMiddle .navMiddleSelect .selectActive {
+  background-color: #ffffff;
+  color: #000000;
 }
 .nav .navRight {
   position: relative;
