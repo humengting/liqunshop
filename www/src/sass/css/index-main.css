@@ -501,16 +501,40 @@ img, input, button {
   background-color: #fff;
 }
 .main .main-top-main .main-top-scroll {
+  line-height: 24px;
+  position: relative;
   width: 796px;
   height: 499px;
   background-color: #fff;
   overflow: hidden;
   margin-bottom: 12px;
 }
+.main .main-top-main .main-top-scroll li {
+  position: absolute;
+  top: 212px;
+  list-style: none;
+  width: 64px;
+  height: 64px;
+  background-color: #ccc;
+  border-radius: 50%;
+  line-height: 64px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.main .main-top-main .main-top-scroll .mainMarqueeL {
+  left: -32px;
+}
+.main .main-top-main .main-top-scroll .mainMarqueeR {
+  right: -32px;
+}
 .main .main-top-main .main-top-scroll .mainMarqueeScoll {
-  width: 796px;
-  height: 1497px;
+  width: 2520px;
+  height: 499px;
   background-color: #fff;
+  position: absolute;
+  left: 0px;
 }
 .main .main-top-main .main-top-scroll dt, .main .main-top-main .main-top-scroll dt img {
   width: 188px;
@@ -640,6 +664,7 @@ img, input, button {
 .floorNav .top .lihover {
   background: url("../../images/libag.jpg") repeat-x bottom;
   border-bottom: 3px solid #b1191b;
+  color: #b1191b;
 }
 .floorNav .first {
   margin-left: 38px;
@@ -648,6 +673,21 @@ img, input, button {
   width: 720px;
   height: 383px;
   background-color: #fff;
+}
+.floorNav .bottom .plan1 dt {
+  background: url("../../images/floorNavPhoto1.jpg") no-repeat top;
+}
+.floorNav .bottom .plan2 dt {
+  background: url("../../images/2floorNavPhoto1.jpg") no-repeat top;
+}
+.floorNav .bottom .plan3 dt {
+  background: url("../../images/3floorNavPhoto1.jpg") no-repeat top;
+}
+.floorNav .bottom .plan4 dt {
+  background: url("../../images/4floorNavPhoto1.jpg") no-repeat top;
+}
+.floorNav .bottom .plan5 dt {
+  background: url("../../images/5floorNavPhoto1.jpg") no-repeat top;
 }
 .floorNav .bottom .left {
   width: 593px;
@@ -667,7 +707,11 @@ img, input, button {
   width: 188px;
   height: 143px;
   background-color: #fff;
-  background: url("../../images/floorNavPhoto1.jpg") no-repeat top;
+}
+.floorNav .bottom .left dl dt img {
+  width: 188px;
+  height: 143px;
+  background-color: #fff;
 }
 .floorNav .bottom .left a {
   color: #777;

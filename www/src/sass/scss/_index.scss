@@ -142,11 +142,36 @@
     margin-top: 25px;
     @include setSize($self-width , 499px);
     .main-top-scroll{
+
+      line-height: 24px;
+      position: relative;
       @include setSize(796px , 499px);
       overflow: hidden;
       margin-bottom: 12px;
+      li{
+        position: absolute;
+        top:212px;
+        list-style: none;
+        @include setSize(64px , 64px,#ccc);
+        border-radius: 50%;
+        line-height: 64px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      .mainMarqueeL{
+        left: -32px;
+      }
+      .mainMarqueeR{
+        right: -32px;
+      }
       .mainMarqueeScoll{
-        @include setSize(796px , 1497px);
+        //@include setSize(796px , 1497px);
+        @include setSize(2520px , 499px);
+        position: absolute;
+        //left: -796px;
+        left: 0px;
       }
       dt,dt img{
         @include setSize(188px , 157px);
@@ -250,6 +275,7 @@
     .lihover{
       background: url("../../images/libag.jpg") repeat-x bottom;
       border-bottom: 3px solid $deepRed;
+      color: $deepRed;
     }
   }
 
@@ -259,17 +285,39 @@
   }
   .bottom{
     @include setSize(720px, 383px);
+    .plan1{
+      dt{background: url("../../images/floorNavPhoto1.jpg") no-repeat top};
+    }
+    .plan2{
+      dt{background: url("../../images/2floorNavPhoto1.jpg") no-repeat top};
+    }
+    .plan3{
+      dt{background: url("../../images/3floorNavPhoto1.jpg") no-repeat top};
+    }
+    .plan4{
+      dt{background: url("../../images/4floorNavPhoto1.jpg") no-repeat top};
+    }
+    .plan5{
+      dt{background: url("../../images/5floorNavPhoto1.jpg") no-repeat top};
+    }
     .left{
       @include setSize(593px, 383px  );
+
       dl{
         @include setSize(196px, 191px );
         float: left;
         line-height: 20px;
         border-right: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
+
         dt{
-          @include setSize(188px, 143px  );
-          background: url("../../images/floorNavPhoto1.jpg") no-repeat top}
+          @include setSize(188px, 143px);
+          img{
+            @include setSize(188px, 143px)
+          }
+
+
+        }
       }
       a{ color: $lightGray; margin-left: 17px;line-height: 24px;}
       dd{ color: $brigtColor; float: left;margin-left: 17px;}
