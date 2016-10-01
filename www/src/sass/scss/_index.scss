@@ -93,26 +93,49 @@
 
 }
 .main{
-  @include setSize($self-width , auto , #ccc);
+  @include setSize($self-width , auto);
   padding: 0 70px;
   padding-top: 10px;
   clear: both;
   .mainTop{
     @include setSize($self-width , 752px);
+
   }
   .main-top-nav{
-    @include setSize($self-width , 136px);
+    @include setSize($self-width , 138px);
     .nav-left{
       float: left;
-      @include setSize(190px , 134px);
+      @include setSize(184px , 138px);
+      img{ @include setSize(184px , 138px);}
     }
     .nav-right{
-      @include setSize(1006px , 134px);
+      @include setSize(1012px , 136px);
       border: 1px solid #ccc;
+      overflow: hidden;
       margin-left: 1px;
       float: left;
-    }
+      position: relative;
+      img{ float: left; border-right: 1px solid #ccc; }
+      .navMarquee{
+        @include setSize(3073px , 134px);
+        position: absolute;
+        left: 0px;
+      }
 
+        li{
+          @include setSize(28px , 48px,#000);
+          line-height: 48px;
+          color: #fff;
+          font-size: 46px;
+          text-align: center;
+          position: absolute;
+          z-index: 2;
+          list-style: none;
+          @include opacity(30);
+        }
+      .marqueeL{left: 0; top: 43px;position: absolute;}
+      .marqueeR{right: 0px; top:43px;position: absolute;}
+    }
   }
 
   .main-top-main{
@@ -120,7 +143,27 @@
     @include setSize($self-width , 499px);
     .main-top-scroll{
       @include setSize(796px , 499px);
+      overflow: hidden;
       margin-bottom: 12px;
+      .mainMarqueeScoll{
+        @include setSize(796px , 1497px);
+      }
+      dt,dt img{
+        @include setSize(188px , 157px);
+      }
+      dd,p{ margin-left: 26px;}
+      span{ color: $deepRed;}
+      p span{ font-size: 18px;}
+      dl{
+        @include setSize(197px , 245px);
+        border: 1px solid $paleGray;
+        border-spacing: 0;
+        border-collapse: collapse;
+        float: left;
+      }
+      dd{
+        line-height: 20px;
+      }
     }
     .main-top-right{
       @include setSize(192px , 499px);
