@@ -289,13 +289,14 @@ img, input, button {
 
 #container {
   width: 1339px;
-  height: 4613px;
+  height: auto;
   background-color: #fff;
   margin: 0 auto;
 }
 
 .nav {
   padding: 0 70px;
+  position: relative;
 }
 .nav .leftnav {
   float: left;
@@ -326,6 +327,49 @@ img, input, button {
 }
 .nav .leftnav dd:hover {
   text-decoration: underline;
+}
+.nav .floatNav {
+  width: 747px;
+  height: 449px;
+  background-color: #fff;
+  border: 1px solid #fc595a;
+  position: absolute;
+  left: 260px;
+  top: 0;
+  z-index: 2;
+  line-height: 17px;
+  display: none;
+}
+.nav .floatNav li {
+  list-style: none;
+  color: #777;
+}
+.nav .floatNav a {
+  cursor: pointer;
+  line-height: 22px;
+  color: #777;
+  color: #777;
+}
+.nav .floatNav a:hover {
+  color: #b1191b;
+}
+.nav .floatNav span {
+  font-weight: bold;
+}
+.nav .floatNav dt {
+  border-bottom: 1px solid #000;
+}
+.nav .floatNav dl {
+  margin-bottom: 15px;
+}
+.nav .floatNav ul {
+  border-top: 1px dashed #000;
+}
+.nav .floatNav .navplan {
+  width: 237px;
+  height: 434px;
+  background-color: #fff;
+  margin-left: 9px;
 }
 .nav .navMiddle {
   float: left;
@@ -547,8 +591,12 @@ img, input, button {
 .main .main-top-main .main-top-scroll span {
   color: #b1191b;
 }
+.main .main-top-main .main-top-scroll p {
+  height: 20px;
+}
 .main .main-top-main .main-top-scroll p span {
-  font-size: 18px;
+  line-height: 20px;
+  margin-left: 10px;
 }
 .main .main-top-main .main-top-scroll dl {
   width: 197px;
@@ -569,10 +617,12 @@ img, input, button {
   margin-left: 15px;
 }
 .main .main-floor {
+  margin-top: 15px;
+  clear: both;
   padding-top: 3px;
   width: 1199px;
-  height: auto;
-  background-color: #adc;
+  height: 430px;
+  background-color: #fff;
 }
 .main .main-floor .floorleft {
   width: 193px;

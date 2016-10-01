@@ -1,11 +1,12 @@
 
 #container{
-  @include setSize( $page-width , 4613px , #fff );
+  @include setSize( $page-width , auto , #fff );
   //padding:0 70px ;
   margin: 0 auto;
 }
 .nav{
   padding: 0 70px;
+  position: relative;
   .leftnav{
     float: left;
     @include setSize(190px , 451px , $navColor );
@@ -19,6 +20,31 @@
     dd{ line-height: 15px; float: left; margin-right: 5px;
         &:hover{ text-decoration: underline;}
     }
+  }
+  .floatNav{
+    @include setSize(747px , 449px );
+    border: 1px solid $paleRed;
+    position: absolute;
+    left: 260px;
+    top:0;
+    z-index: 2;
+    line-height: 17px;
+    li{ list-style: none; color:$lightGray;}
+    a{
+      cursor: pointer;
+      line-height: 22px;
+      color:$lightGray;
+      @include linkColor($lightGray,$deepRed);
+    }
+    span{ font-weight: bold;}
+    dt{ border-bottom:1px solid #000;}
+    dl{ margin-bottom: 15px;}
+    ul{ border-top: 1px dashed #000};
+    .navplan{
+      @include setSize(237px , 434px );
+      margin-left:9px;
+    }
+    display: none;
   }
   .navMiddle{
     float: left;
@@ -178,7 +204,8 @@
       }
       dd,p{ margin-left: 26px;}
       span{ color: $deepRed;}
-      p span{ font-size: 18px;}
+      p{ height: 20px;}
+      p span{  line-height: 20px; margin-left: 10px;}
       dl{
         @include setSize(197px , 245px);
         border: 1px solid $paleGray;
@@ -196,9 +223,11 @@
     }
   }
   .main-floor{
-
+    margin-top: 15px;
+    clear: both;
     padding-top: 3px;
-    @include setSize($self-width , auto , #adc);
+    @include setSize($self-width , 430px);
+
     .floorleft{
       @include setSize(193px , 423px );
       position: relative;
