@@ -247,7 +247,7 @@ img, input, button {
 
 .footBottom {
   width: 1199px;
-  height: 488px;
+  height: auto;
   background-color: #fff;
   clear: both;
   padding: 0 70px;
@@ -275,9 +275,15 @@ img, input, button {
   color: #777;
 }
 .footBottom .footBottomTop h3 {
-  color: #dedede;
+  color: #bebebe;
   border-bottom: 1px solid #ccc;
   line-height: 25px;
+}
+.footBottom .footBottomTop a {
+  color: #929292;
+}
+.footBottom .footBottomTop a:hover {
+  color: #b1191b;
 }
 .footBottom .footBottomTop li {
   margin-left: 20px;
@@ -285,6 +291,27 @@ img, input, button {
 }
 .footBottom .footBottomTop li img {
   margin-top: 10px;
+}
+.footBottom .footDown {
+  width: 1199px;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+.footBottom .footDown li {
+  text-align: center;
+  color: #929292;
+}
+.footBottom .footDown a {
+  color: #929292;
+}
+.footBottom .footDown a img {
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.footBottom .footDown p {
+  color: #bebebe;
 }
 
 #container {

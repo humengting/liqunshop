@@ -1,8 +1,11 @@
 
 #container{
-  @include setSize( $page-width , auto , #fff );
+  @include setSize( $page-width , auto  );
   //padding:0 70px ;
   margin: 0 auto;
+}
+.head{
+  border-bottom: 2px solid $deepRed;
 }
 .nav{
   padding: 0 70px;

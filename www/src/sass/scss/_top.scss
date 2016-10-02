@@ -1,7 +1,6 @@
 .head{
-
   width: $page-width;
-  border-bottom: 2px solid $deepRed;
+  height: auto;
 }
 .marginLeft{
     margin-left: 70px;
@@ -123,8 +122,6 @@
   }
 }
 .headNav{
-    width: 1339px;
-
     @include setType($self-width , 35px);
     .first{
       @include setType(190px , 35px ,$deepRed);
@@ -136,13 +133,18 @@
   .home{
     a{
       color: #f13031;
+
     }
   }
   li{
     float: left;
     @include setType(100px,35px);
     text-align: center;
-    cursor: pointer;
+    a{
+      @include setSize(100px,35px);
+      @include linkColor( $lightGray,#b1191b);
+      display: block;
+    }
   }
   .headSign{
     float: right;

@@ -1,0 +1,10 @@
+
+.container{
+  @include setSize( $page-width , auto );
+  margin: 0 auto;
+
+}
+.main{
+  @include setSize(1024,413px,#ccc);
+  margin-left: 88px;
+}
