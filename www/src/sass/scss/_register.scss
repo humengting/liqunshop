@@ -6,8 +6,8 @@
 
 }
 .main{
-  @include setSize(1022px,411px ,#ccc);
-  border: 1px solid $bottomGray;
+  @include setSize(1022px,411px);
+  border: 1px solid #d3d3d3;
   margin-top: 12px;
   margin-left: 156px;
   padding-top: 52px;
