@@ -1,0 +1,95 @@
+.container{
+  @include setSize( $page-width , auto );
+  margin: 0 auto;
+}
+.main {
+  @include setSize(959px, 483px);
+  border: 1px solid #d3d3d3;
+  color:#999;
+  margin-top: 12px;
+  margin-left: 156px;
+  padding-top: 38px;
+  padding-left: 63px;
+  position: relative;
+    input{
+      @include setSize(248px, 36px);
+      float: left;
+      border: 1px solid #d3d3d3;
+      padding: 0 10px;
+      margin-bottom: 30px
+    }
+  p{ float: left;clear: both;line-height: 36px;}
+  .checkbox{
+    width: 13px;
+    height:13px;
+    float: none;
+  }
+  .validateBox{
+    clear: both;
+    @include setSize(130px,36px);
+    margin-left: 108px;
+  }
+  span{ color: $brigtColor; margin-right: 6px;}
+  .inputbg{
+    background: url("../../images/loginIcon1.jpg") no-repeat right;
+  }
+  .inputbg2{
+    background: url("../../images/loginIcon2.jpg") no-repeat right;
+  }
+  .marginL{
+    margin-left: 90px;
+    margin-bottom: 28px;
+  }
+  .btn{
+    text-align: center;
+    clear: both;
+    line-height: 36px;
+    color: #ffffff;
+    cursor: pointer;
+    @include setSize(269px,36px,#e23c3e);
+
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .blueClor{
+    color: blue;
+    cursor: pointer;
+  }
+  .change{
+    @include setSize(99px,30px);
+    border: 1px solid #ccc;
+    float: left;
+    margin-bottom: 12px;
+  }
+  .p1{
+    margin-left: 30px;
+
+  }
+
+}
+.server{
+  @include setSize(50px,54px);
+  position: absolute;
+  right: 23px;
+  border: 1px solid #857f81;
+  border-radius: 10%;
+  color: #7c5957;
+  cursor: pointer;
+  text-align: center;
+}
+.server1{
+ top :180px;
+}
+.server2{
+ top :275px;
+}
+.server3{
+ top :337px;
+  position: absolute;
+  right: 23px;
+  cursor: pointer;
+  border: 1px solid #857f81;
+  color: #ffffff;
+  @include setSize(48px,18px,#970127);
+
+}

@@ -1,0 +1,447 @@
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #b1191b;
+}
+
+ul, ol li {
+  list-style: none;
+}
+
+img, input, button {
+  border: none;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.head {
+  width: 1339px;
+  height: auto;
+}
+
+.marginLeft {
+  margin-left: 70px;
+}
+
+.headTop {
+  width: 1199px;
+  height: 70px;
+  background-color: black;
+  line-height: 70px;
+}
+.headTop .topImg {
+  width: 1199px;
+  height: 70px;
+  background-color: #fff;
+  line-height: 70px;
+}
+
+.headInfo {
+  width: 1199px;
+  height: 25px;
+  background-color: #fff;
+  line-height: 25px;
+  color: #777;
+}
+.headInfo a {
+  color: #777;
+}
+.headInfo a:hover {
+  color: #b1191b;
+}
+
+.headInfoRight {
+  position: relative;
+  float: right;
+  height: 12px;
+}
+.headInfoRight li {
+  float: left;
+  height: 12px;
+  position: relative;
+}
+.headInfoRight li img {
+  vertical-align: middle;
+}
+.headInfoRight a {
+  height: 12px;
+  padding: 0  15px;
+  border-right: 1px solid #777;
+}
+.headInfoRight a.end {
+  border-right: none;
+}
+.headInfoRight .peopleService {
+  padding: 0  15px;
+}
+.headInfoRight .peopleService ul {
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 11;
+}
+.headInfoRight .peopleService li {
+  float: none;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding: 0  15px;
+  width: 79px;
+}
+
+.headLogo {
+  position: relative;
+  width: 1199px;
+  height: 100px;
+  background-color: #fff;
+  line-height: 100px;
+}
+.headLogo img {
+  vertical-align: middle;
+}
+.headLogo .search {
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.headLogo .searchTop {
+  width: 530px;
+  height: 100%;
+  background-color: #fff;
+  line-height: 100%;
+}
+.headLogo .searchTop img {
+  border: 3px solid #fc595a;
+  border-right: none;
+  float: left;
+}
+.headLogo .searchTop input {
+  width: 400px;
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+  border: 3px solid #fc595a;
+  border-left: none;
+  float: left;
+}
+.headLogo .searchTop button {
+  float: left;
+  width: 82px;
+  height: 41px;
+  background-color: #fc595a;
+  line-height: 41px;
+  border: 3px solid #fc595a;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 35px;
+  border-left: none;
+  letter-spacing: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.headLogo .headLogoRight {
+  display: inline-block;
+  position: relative;
+}
+.headLogo .headLogoRight .logoImgSet {
+  margin-top: -30px;
+  margin-right: 20px;
+}
+.headLogo .headLogoRight .logoImgSet2 {
+  margin-top: -30px;
+}
+.headLogo .headLogoRight .cartCountImg {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
+.headLogo .headLogoRight .cartCountSpan {
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  line-height: 21px;
+  background: url("../../images/cartCount.png") no-repeat;
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+.headLogo .searchBottom {
+  height: 20px;
+  top: 25px;
+  position: absolute;
+}
+.headLogo .searchBottom li {
+  float: left;
+  margin-left: 10px;
+}
+.headLogo .searchBottom a {
+  color: #777;
+}
+.headLogo .searchBottom a:hover {
+  color: #b1191b;
+}
+
+.headNav {
+  width: 1199px;
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+}
+.headNav .first {
+  width: 190px;
+  height: 35px;
+  background-color: #b1191b;
+  line-height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.headNav .home a {
+  color: #f13031;
+}
+.headNav li {
+  float: left;
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+  text-align: center;
+}
+.headNav li a {
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  color: #777;
+  display: block;
+}
+.headNav li a:hover {
+  color: #b1191b;
+}
+.headNav .headSign {
+  float: right;
+}
+
+.footBottom {
+  width: 1199px;
+  height: auto;
+  background-color: #fff;
+  clear: both;
+  padding: 0 70px;
+  overflow: hidden;
+}
+.footBottom .footBottomTop {
+  width: 1199px;
+  height: 165px;
+  background-color: #fff;
+  padding-left: 20px;
+  padding-top: 25px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+.footBottom .footBottomTop ul {
+  width: 130px;
+  height: 136px;
+  background-color: #fff;
+  float: left;
+  margin-right: 40px;
+}
+.footBottom .footBottomTop ul a {
+  margin: 8px;
+  line-height: 22px;
+  color: #777;
+}
+.footBottom .footBottomTop h3 {
+  color: #bebebe;
+  border-bottom: 1px solid #ccc;
+  line-height: 25px;
+}
+.footBottom .footBottomTop a {
+  color: #929292;
+}
+.footBottom .footBottomTop a:hover {
+  color: #b1191b;
+}
+.footBottom .footBottomTop li {
+  margin-left: 20px;
+  color: #777;
+}
+.footBottom .footBottomTop li img {
+  margin-top: 10px;
+}
+.footBottom .footDown {
+  width: 1199px;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+.footBottom .footDown li {
+  text-align: center;
+  color: #929292;
+}
+.footBottom .footDown a {
+  color: #929292;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.footBottom .footDown a img {
+  margin-bottom: 5px;
+}
+.footBottom .footDown p {
+  color: #bebebe;
+}
+
+.container {
+  width: 1339px;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.main {
+  width: 959px;
+  height: 483px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  color: #999;
+  margin-top: 12px;
+  margin-left: 156px;
+  padding-top: 38px;
+  padding-left: 63px;
+  position: relative;
+}
+.main input {
+  width: 248px;
+  height: 36px;
+  background-color: #fff;
+  float: left;
+  border: 1px solid #d3d3d3;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+.main p {
+  float: left;
+  clear: both;
+  line-height: 36px;
+}
+.main .checkbox {
+  width: 13px;
+  height: 13px;
+  float: none;
+}
+.main .validateBox {
+  clear: both;
+  width: 130px;
+  height: 36px;
+  background-color: #fff;
+  margin-left: 108px;
+}
+.main span {
+  color: #ff0000;
+  margin-right: 6px;
+}
+.main .inputbg {
+  background: url("../../images/loginIcon1.jpg") no-repeat right;
+}
+.main .inputbg2 {
+  background: url("../../images/loginIcon2.jpg") no-repeat right;
+}
+.main .marginL {
+  margin-left: 90px;
+  margin-bottom: 28px;
+}
+.main .btn {
+  text-align: center;
+  clear: both;
+  line-height: 36px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 269px;
+  height: 36px;
+  background-color: #e23c3e;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.main .blueClor {
+  color: blue;
+  cursor: pointer;
+}
+.main .change {
+  width: 99px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  float: left;
+  margin-bottom: 12px;
+}
+.main .p1 {
+  margin-left: 30px;
+}
+
+.server {
+  width: 50px;
+  height: 54px;
+  background-color: #fff;
+  position: absolute;
+  right: 23px;
+  border: 1px solid #857f81;
+  border-radius: 10%;
+  color: #7c5957;
+  cursor: pointer;
+  text-align: center;
+}
+
+.server1 {
+  top: 180px;
+}
+
+.server2 {
+  top: 275px;
+}
+
+.server3 {
+  top: 337px;
+  position: absolute;
+  right: 23px;
+  cursor: pointer;
+  background-color: #970127;
+  border: 1px solid #857f81;
+  color: #ffffff;
+  width: 48px;
+  height: 18px;
+  background-color: #970127;
+}
+
+/*# sourceMappingURL=login-main.css.map */
