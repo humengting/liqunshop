@@ -328,92 +328,130 @@ img, input, button {
   height: auto;
   background-color: #fff;
   margin: 0 auto;
+  position: relative;
 }
 
 .main {
-  width: 1022px;
-  height: 411px;
-  background-color: #fff;
-  border: 1px solid #d3d3d3;
-  margin-top: 12px;
-  margin-left: 156px;
-  padding-top: 52px;
-}
-.main .mainImg {
-  margin-left: 73px;
-}
-.main .printInfo {
-  width: 287px;
-  height: 228px;
-  background-color: #fafafa;
-  border: 1px solid #ccc;
-  margin-left: 79px;
-  margin-top: 17px;
-  padding: 20px;
-  font-size: 20px;
-  color: #777;
-}
-.main .printInfo a {
-  font-size: 13px;
-  color: #777;
-}
-.main .printInfo a:hover {
-  color: #b1191b;
-}
-.main .printInfo .spanRadius {
-  display: inline-block;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  background-color: #b1191b;
-  color: #fff;
-  line-height: 15px;
-  font-weight: bold;
-  text-align: center;
-}
-.main .printInfo input {
-  margin-top: 14px;
-  width: 234px;
-  height: 38px;
-  background-color: #fff;
-  border: 1px solid #929292;
-  border-left: none;
-  padding-left: 10px;
-}
-.main .printInfo .xfk {
-  width: 38px;
-  height: 38px;
-  background-color: #fff;
-  border: 1px solid #929292;
-  margin-top: 14px;
-}
-.main .printInfo .p1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.main .printInfo .p2 {
-  font-size: 12px;
-  color: #000;
-}
-.main .printInfo .p2 a {
-  margin: 0 4px;
-}
-.main .printInfo .p2 img {
-  vertical-align: middle;
-}
-.main .printInfo .btn {
-  clear: both;
-  width: 281px;
-  height: 32px;
-  background-color: #e4393c;
-  text-align: center;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  color: #fff;
-  border: 1px solid #ff0000;
-  cursor: pointer;
+  padding: 0 70px;
+  margin-top: 20px;
 }
 
-/*# sourceMappingURL=register-main.css.map */
+.left {
+  width: 230px;
+  height: auto;
+  background-color: #fff;
+  margin-right: 8px;
+}
+.left dl {
+  border: 1px solid #777;
+  margin-bottom: 15px;
+}
+.left dt {
+  width: 210px;
+  height: 35px;
+  background-color: #f7f7f7;
+  margin-left: 10px;
+  line-height: 35px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.leftdd a {
+  margin-left: 10px;
+  color: #777;
+  display: inline-block;
+  line-height: 25px;
+}
+.leftdd a:hover {
+  color: #ff0000;
+}
+
+.leftdd1 a {
+  width: 90px;
+  height: auto;
+  background-color: #fff;
+}
+
+.leftdd2 a {
+  width: 54px;
+  height: auto;
+  background-color: #fff;
+}
+
+.leftdd3 {
+  background-color: #f7f7f7;
+  padding: 0 20px;
+}
+.leftdd3 img {
+  margin-top: 10px;
+}
+.leftdd3 a {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #292929;
+  text-align: center;
+}
+.leftdd3 a:hover {
+  color: #ff0000;
+}
+.leftdd3 a p {
+  line-height: 30px;
+}
+
+.right {
+  width: 961px;
+  height: auto;
+  background-color: #fff;
+}
+.right .redColor {
+  color: #ff0000;
+}
+.right .fontsize {
+  font-size: 14px;
+  font-weight: bold;
+}
+.right .fontstyle {
+  letter-spacing: 2px;
+}
+.right .rightTop {
+  color: #292929;
+}
+.right .rightTop p {
+  line-height: 27px;
+}
+.right .rightTop .rightp1 a {
+  color: #5b5b5b;
+}
+.right .rightTop .rightp1 a:hover {
+  color: #5b5b5b;
+}
+.right .rightTop .topImg {
+  margin-top: 30px;
+  width: 240px;
+  height: 240px;
+  background-color: #fff;
+  box-shadow: 10px 10px 5px #d8d8d8;
+  margin-right: 33px;
+}
+
+.Imgdetails p {
+  width: 572px;
+  height: auto;
+  background-color: #fff;
+}
+.Imgdetails .checked {
+  border: 1px solid #c9c9c9;
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+}
+.Imgdetails .checkedPrint {
+  border: 1px solid #c9c9c9;
+  width: 34px;
+  height: 20px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=details-main.css.map */

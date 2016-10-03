@@ -45,7 +45,7 @@ img, input, button {
 
 .head {
   width: 1339px;
-  border-bottom: 2px solid #b1191b;
+  height: auto;
 }
 
 .marginLeft {
@@ -213,7 +213,6 @@ img, input, button {
 }
 
 .headNav {
-  width: 1339px;
   width: 1199px;
   height: 35px;
   background-color: #fff;
@@ -239,7 +238,16 @@ img, input, button {
   background-color: #fff;
   line-height: 35px;
   text-align: center;
-  cursor: pointer;
+}
+.headNav li a {
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  color: #777;
+  display: block;
+}
+.headNav li a:hover {
+  color: #b1191b;
 }
 .headNav .headSign {
   float: right;
@@ -250,7 +258,7 @@ img, input, button {
   height: auto;
   background-color: #fff;
   clear: both;
-  padding: 0 70px;
+  padding-left: 70px;
   overflow: hidden;
 }
 .footBottom .footBottomTop {
@@ -305,9 +313,10 @@ img, input, button {
 }
 .footBottom .footDown a {
   color: #929292;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 .footBottom .footDown a img {
-  margin-right: 3px;
   margin-bottom: 5px;
 }
 .footBottom .footDown p {
@@ -319,6 +328,28 @@ img, input, button {
   height: auto;
   background-color: #fff;
   margin: 0 auto;
+  position: relative;
+}
+
+.stairs {
+  position: fixed;
+  width: 36px;
+  height: 290px;
+  background-color: #f8f8f8;
+  border: 1px solid #efefef;
+  right: 60px;
+  top: 50%;
+  margin-top: -144px;
+  display: none;
+}
+.stairs img {
+  border: none;
+  margin: 0;
+  border-spacing: 0;
+}
+
+.head {
+  border-bottom: 2px solid #b1191b;
 }
 
 .nav {

@@ -5,13 +5,36 @@
 //轮播图
 adScroll("#navMiddleSelect","#navMiddle","headnav","selectActive",7,5000,true)
 adScroll("#middleNav","#navButtom","adScroll","first",2,3000,true);
+
 adScroll("#adScroll","#floorlfet-buttom","flool1scor","floorfirstli",2,3000,true);
-adScroll(".floorMiddleUl",".floorMiddle","floorMiddle","floorfirstli",2,3000,false);
+adScroll("#floorMiddleUl","#floorMiddle","floorMiddle","floorfirstli",2,3000,false);
+
+
+adScroll("#adScroll-2","#floorlfet-buttom-2","2flool1scor","floorfirstli",2,3000,true);
+adScroll("#floorMiddleUl-2","#floorMiddle-2","2floorMiddle","floorfirstli",2,3000,false);
+
+adScroll("#adScroll-3","#floorlfet-buttom-3","3flool1scor","floorfirstli",2,3000,true);
+adScroll("#floorMiddleUl-3","#floorMiddle-3","3floorMiddle","floorfirstli",2,3000,false);
+
+adScroll("#adScroll-4","#floorlfet-buttom-4","2flool1scor","floorfirstli",2,3000,true);
+adScroll("#floorMiddleUl-4","#floorMiddle-4","4floorMiddle","floorfirstli",2,3000,false);
+
+adScroll("#adScroll-5","#floorlfet-buttom-5","2flool1scor","floorfirstli",2,3000,true);
+adScroll("#floorMiddleUl-5","#floorMiddle-5","5floorMiddle","floorfirstli",2,3000,false);
+
+adScroll("#adScroll-6","#floorlfet-buttom-6","2flool1scor","floorfirstli",2,3000,true);
+adScroll("#floorMiddleUl-6","#floorMiddle-6","3floorMiddle","floorfirstli",2,3000,false);
+//面板切换
+planChange("#floorNavtop","#plan1");
+planChange("#floorNavtop-2","#plan1-2");
+planChange("#floorNavtop-3","#plan1-3");
+planChange("#floorNavtop-4","#plan1-4");
+planChange("#floorNavtop-5","#plan1-5");
+planChange("#floorNavtop-6","#plan1-6");
+
 //无缝滚动
 marqueeScroll("#nav-right","#navMarquee","marqueeR",1012,3000);
 marqueeScroll("#main-top-scroll","#mainMarqueeScoll","mainMarqueeR",796,5000);
-//面板切换
-planChange();
 
 //封装函数  点父亲，图片父亲,图片名称，激活的Class ，图片最大数，最小数，是否需要自动播放
 function adScroll(objUl,objImg,objImgName,activeClass,_max,_time,isFlage){
@@ -80,8 +103,8 @@ function marqueeScroll( objUL,objImg, _classR,_length,_time){
         },_time);
     }
 }
-//面板切换
-function planChange(){
+//li父亲  面板
+function planChange(objUL,plan1){
     //定义内容
     var arr1 = ["福临门金粳稻5kg","长生特香花生油","2015中秋猪蹄","青岛啤酒经典礼盒装","波尼亚福运来礼盒","福记福月月饼礼盒640g"]
     var prise1 = ["34.50","129.80","180.00","70.00","119.00","58.00"]
@@ -100,24 +123,22 @@ function planChange(){
     var arr = [arr1,arr2,arr3,arr4,arr5];
     var prise = [prise1,prise2,prise3,prise4,prise5];
     var plans = ["plan1","plan2","plan3","plan4","plan5"];
-//console.log(arr[1][0])
-    $("#floorNavtop li").bind("click mouseover",function(){
+    $(objUL+" li").bind("click mouseover",function(){
         //$("#floorNavtop").children().removeClass("lihover");
         $(this).css("cursor","pointer");
         var liIndex = $(this).index();
-        console.log(liIndex)
+        //console.log(liIndex)
         $(this).siblings().removeClass("lihover");
         $(this).addClass("lihover");
         //console.log($(this).index());
-        $("#plan1 p a").each( function(i){
-            $("#plan1").removeClass();
-            console.log(plans[liIndex]);
-            $("#plan1").addClass(plans[liIndex]);
+        $(plan1+" p a").each( function(i){
+            $(plan1).removeClass();
+            $(plan1).addClass(plans[liIndex]);
             //console.log(liIndex)
             //console.log(   $("#plan1 p a").eq(i).html(arr[liIndex][2]));
             //console.log( $("#plan1 p a").eq(i).html());
-          $("#plan1 p a").eq(i).html(arr[liIndex][i]);
-          $("#plan1 dd").eq(i).html("利群价：￥"+prise[liIndex][i]);
+            $(plan1+" p a").eq(i).html(arr[liIndex][i]);
+            $(plan1+" dd").eq(i).html("利群价：￥"+prise[liIndex][i]);
         })
     });
 }
@@ -177,3 +198,11 @@ $("#floatNav").bind( "mouseleave",function(){
     $("#floatNav").css("display","none");
 })
 
+$(window).scroll( function() {
+    document.title = $(this).scrollTop();
+    if($(this).scrollTop() >= 1200){
+        $("#stairs").css("display","block");
+    }else{
+        $("#stairs").css("display","none");
+    }
+});

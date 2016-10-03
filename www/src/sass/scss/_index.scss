@@ -3,6 +3,21 @@
   @include setSize( $page-width , auto  );
   //padding:0 70px ;
   margin: 0 auto;
+  position: relative;
+}
+.stairs{
+    position: fixed;
+    @include setSize( 36px , 290px ,#f8f8f8 );
+    border: 1px solid #efefef;
+    right: 60px;
+    top:50%;
+    margin-top: -144px;
+    display: none;
+    img{
+      border: none;
+      margin: 0;
+      border-spacing: 0;
+    }
 }
 .head{
   border-bottom: 2px solid $deepRed;

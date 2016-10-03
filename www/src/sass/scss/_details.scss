@@ -1,0 +1,106 @@
+.container{
+  @include setSize( $page-width , auto  );
+  margin: 0 auto;
+  position: relative;
+}
+.main{
+  padding: 0 70px;
+  margin-top: 20px;
+}
+.left{
+  @include setSize( 230px , auto );
+  margin-right: 8px;
+  dl{
+    border: 1px solid $lightGray;
+    margin-bottom: 15px;
+  }
+  dt{
+    @include setSize( 210px , 35px ,#f7f7f7);
+    margin-left: 10px;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+.leftdd{
+  a{
+    margin-left: 10px;
+    @include linkColor($lightGray,$brigtColor);
+
+    display: inline-block;
+    line-height: 25px;
+  }
+}
+.leftdd1{
+  a{
+    @include setSize( 90px , auto );
+  }
+}
+.leftdd2{
+  a{
+    @include setSize( 54px , auto );
+  }
+}
+.leftdd3{
+  background-color:#f7f7f7 ;
+  img{
+    margin-top: 10px;
+  }
+  padding: 0 20px;
+  a{
+    margin-top: 20px;
+    margin-left: 10px;
+    @include linkColor(#292929,$brigtColor);
+    text-align: center;
+    p{
+      line-height: 30px;
+    }
+  }
+}
+.right{
+  .redColor{
+    color: $brigtColor;
+  }
+  .fontsize{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .fontstyle{
+    letter-spacing: 2px;
+  }
+  @include setSize(961px, auto);
+  .rightTop{
+    p{
+      line-height: 27px;
+    }
+    color: #292929;
+    .rightp1{
+      a{
+        @include linkColor(#5b5b5b,#5b5b5b);
+      }
+    }
+    .topImg{
+      margin-top: 30px;
+      @include setSize(240px, 240px);
+      box-shadow: 10px 10px 5px #d8d8d8;
+      margin-right: 33px;
+    }
+  }
+}
+.Imgdetails{
+  p{
+    @include setSize(572px, auto);
+  }
+  .checked{
+    border: 1px solid #c9c9c9;
+    @include setSize(13px, 13px);
+
+  }
+  .checkedPrint{
+    border: 1px solid #c9c9c9;
+    @include setSize(34px, 20px);
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+  }
+}

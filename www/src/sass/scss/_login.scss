@@ -68,7 +68,7 @@
 
 }
 .server{
-  @include setSize(50px,54px);
+  @include setSize(50px,56px);
   position: absolute;
   right: 23px;
   border: 1px solid #857f81;
@@ -91,5 +91,7 @@
   border: 1px solid #857f81;
   color: #ffffff;
   @include setSize(48px,18px,#970127);
+  border-radius: 10%;
+  line-height: 18px;
 
 }

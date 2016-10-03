@@ -1,7 +1,7 @@
 .footBottom{
   @include setSize($self-width, auto  );
   clear: both;
-  padding: 0 70px;
+  padding-left: 70px;
   overflow: hidden;
   .footBottomTop{
     @include setSize($self-width, 165px  );
