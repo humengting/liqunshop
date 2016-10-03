@@ -434,16 +434,33 @@ img, input, button {
   margin-right: 33px;
 }
 
+.Imgdetails {
+  position: relative;
+}
+.Imgdetails .Imgdetails1 {
+  margin-top: 20px;
+}
 .Imgdetails p {
   width: 572px;
   height: auto;
   background-color: #fff;
+  line-height: 30px;
 }
 .Imgdetails .checked {
   border: 1px solid #c9c9c9;
   width: 13px;
   height: 13px;
   background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 219px;
+  text-align: center;
+}
+.Imgdetails .checked1 {
+  left: 58px;
+}
+.Imgdetails .checked2 {
+  left: 122px;
 }
 .Imgdetails .checkedPrint {
   border: 1px solid #c9c9c9;
@@ -452,6 +469,193 @@ img, input, button {
   background-color: #fff;
   text-align: center;
   line-height: 20px;
+  position: absolute;
+  left: 78px;
+  top: 215px;
+}
+.Imgdetails .Imgdetails1 {
+  position: relative;
+}
+.Imgdetails .carbtn {
+  width: 135px;
+  height: 35px;
+  background-color: #e13134;
+  line-height: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  clear: both;
+  margin-top: 20px;
+}
+.Imgdetails .addbtn {
+  width: 70px;
+  height: 35px;
+  background-color: #f5f5f5;
+  color: #030303;
+  line-height: 35px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.groupTop {
+  text-align: center;
+  font-weight: bold;
+  width: 70px;
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+  clear: both;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  margin-top: 30px;
+}
+
+.groupTop1 {
+  width: 965px;
+  height: 35px;
+  background-color: #fff;
+  font-weight: bold;
+  line-height: 35px;
+  clear: both;
+  border: 1px solid #e0e0e0;
+  margin-top: 30px;
+}
+.groupTop1 li {
+  float: left;
+  text-align: center;
+  width: 70px;
+  height: 35px;
+  background-color: #fff;
+  position: relative;
+}
+.groupTop1 li:hover {
+  color: #ff0000;
+}
+.groupTop1 .groupTopActive {
+  color: #ff0000;
+  width: 70px;
+  height: 37px;
+  background-color: #fff;
+  border-top: 2px solid #ff0000;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-bottom: none;
+  position: relative;
+  top: -2px;
+  z-index: 3;
+}
+
+.groupTopRight {
+  width: 888px;
+  height: 30px;
+  background-color: #fff;
+  border-top: 1px solid #989898;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 33px;
+}
+.groupTopRight li {
+  width: 70px;
+  height: 30px;
+  background-color: #fff;
+  line-height: 30px;
+  text-align: center;
+  color: #666666;
+}
+
+.groupMain {
+  width: 960px;
+  height: 262px;
+  background-color: #fff;
+  clear: both;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  margin-left: 3px;
+}
+.groupMain dl {
+  float: left;
+}
+.groupMain .group1 {
+  margin-left: 36px;
+}
+.groupMain dt img {
+  width: 65px;
+  height: 104px;
+  background-color: #fff;
+}
+.groupMain .groupSelect {
+  margin-left: 10px;
+  float: left;
+  overflow-x: scroll;
+  width: 748px;
+  height: 220px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.groupMain .addcarbtn {
+  width: 65px;
+  height: 28px;
+  background-color: #ee220a;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 10%;
+  color: #ffffff;
+}
+.groupMain .groupPage {
+  width: 778px;
+  height: 200px;
+  background-color: #fff;
+}
+.groupMain .groupPage p {
+  color: #ff0000;
+}
+.groupMain .groupIcon {
+  margin-top: 20px;
+}
+.groupMain .groupMoney {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.groupMain .groupMoney span {
+  color: #ff0000;
+}
+
+.introduce .evaluate {
+  width: 959px;
+  height: 159px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.introduce .evaluateL {
+  float: left;
+  margin-right: 50px;
+}
+.introduce .evaluateL span {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+.introduce .evaluateL p {
+  color: #999999;
+  margin-top: 7px;
+  margin-left: 60px;
+}
+
+.evaluateR li {
+  line-height: 40px;
+}
+.evaluateR span {
+  width: 101px;
+  height: 11px;
+  background-color: #efefef;
+  display: inline-block;
+  margin-left: 20px;
+}
+.evaluateR .redspan {
+  background-color: #e20000;
 }
 
 /*# sourceMappingURL=details-main.css.map */
