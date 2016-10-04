@@ -413,7 +413,22 @@ img, input, button {
 .right .fontstyle {
   letter-spacing: 2px;
 }
+.right .floatTopImg {
+  position: absolute;
+  left: 310px;
+  top: 48px;
+  z-index: 3;
+  width: 480px;
+  height: 480px;
+  background-color: #fff;
+}
+.right .floatTopImg img {
+  width: 480px;
+  height: 480px;
+  background-color: #fff;
+}
 .right .rightTop {
+  position: relative;
   color: #292929;
 }
 .right .rightTop p {
@@ -432,6 +447,26 @@ img, input, button {
   background-color: #fff;
   box-shadow: 10px 10px 5px #d8d8d8;
   margin-right: 33px;
+  position: relative;
+}
+.right .rightTop .topImg .searchImg {
+  width: 29px;
+  height: 35px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../../images/headSearch.jpg") no-repeat;
+}
+.right .rightTop .topImg .searchdiv {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .Imgdetails {
@@ -523,10 +558,10 @@ img, input, button {
 .groupTop1 li {
   float: left;
   text-align: center;
-  width: 70px;
   height: 35px;
-  background-color: #fff;
+  padding: 0 10px;
   position: relative;
+  cursor: pointer;
 }
 .groupTop1 li:hover {
   color: #ff0000;
@@ -536,6 +571,7 @@ img, input, button {
   width: 70px;
   height: 37px;
   background-color: #fff;
+  padding: 0 10px;
   border-top: 2px solid #ff0000;
   border-right: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
@@ -621,6 +657,8 @@ img, input, button {
 }
 
 .introduce .evaluate {
+  clear: both;
+  margin-top: 3 0px;
   width: 959px;
   height: 159px;
   background-color: #fff;

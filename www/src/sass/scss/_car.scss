@@ -1,0 +1,86 @@
+.container{
+  @include setSize( $page-width , auto  );
+  margin: 0 auto;
+  position: relative;
+}
+.main{
+  padding: 0 70px;
+  .mainMiddle{
+   li{
+     @include setSize( 1000px , auto ,#dfe0e2 );
+     line-height: 32px;
+     span{
+       display: inline-block;
+       text-align: center;
+       @include setSize( 107px , auto ,#dfe0e2 )
+     }
+     .mainMiddlespan1{
+        @include setSize( 319px , auto ,#dfe0e2 )
+      }
+     .mainMiddlespanend{
+       @include setSize( 165px , auto ,#dfe0e2 )
+     }
+
+   }
+    .mainMiddleli1{
+      background-color: #ffffff;
+      span{
+        background-color: #ffffff;
+      }
+      .count{
+          .count1{
+            display: inline-block;
+            border: 1px solid #ccc;
+            @include setSize( 13px , 13px  );
+            line-height: 13px;
+          }
+        input{
+          display: inline-block;
+          @include setSize( 40px , 22px  );
+          border: 1px solid #ccc;
+        }
+          .count2{
+            display: inline-block;
+            border: 1px solid #ccc;
+            line-height: 13px;
+            @include setSize( 13px , 13px  )
+          }
+      }
+    }
+    .redspan{
+      color: $brigtColor;
+    }
+    .redbold{
+      color: $deepRed;
+      font-weight: bold;
+    }
+    .big{
+      font-size: 20px;
+    }
+    .mainMiddleli2{
+      text-align: right;
+      span{
+        display: inline;
+      }
+    }
+    .mainMiddleli3{
+      background-color: #f3f3f3;
+      text-align: right;
+      span{
+        background-color: #f3f3f3;
+        display: inline;
+      }
+      .continue{
+        cursor: pointer;
+        display: inline-block;
+        @include setSize(129px,35px,#626262);
+      }
+      .statistics{
+        cursor: pointer;
+        display: inline-block;
+        @include setSize(129px,35px,$deepRed);
+      }
+    }
+  }
+
+}

@@ -125,10 +125,15 @@
                 <p class="rightp1"><h3 class="floatL">零食酒水</h3> >
                 <a>饮料</a> > <a href="#">碳酸饮料</a> >
                 <a href="#">雪碧330ml</a></p>
-                <div class="topImg floatL">
+                <div class="topImg floatL" id="topImg">
+                    <img src="../images/detailxuebi.jpg">
+                    <div class="searchImg"></div>
+                    <div class="searchdiv"></div>
+                </div>
+                <div class="floatTopImg">
                     <img src="../images/detailxuebi.jpg">
                 </div>
-                <div class="Imgdetails floatL">
+                <div class="Imgdetails floatL" id="Imgdetails">
                     <p style="color: #666695" class="fontsize fontstyle">雪碧330ml</p>
                     <p class="redColor fontstyle">(每箱12瓶)仅限青岛市内四区配送或选择自提点，敬请谅解！</p>
                     <hr style="border: 1px dotted #d3d3d3 "/>
@@ -139,10 +144,10 @@
                     <p>服  务：由<span class="redColor">利群商城</span>发货并提供售后服务。</p>
                     <hr style="border: 1px dotted #d3d3d3 "/>
                     <p class="Imgdetails1"> 购买数量：
-                    <div class="checked checked1">-</div>
-                    <div class="checkedPrint ">1</div>
-                    <div class="checked  checked2">+</div></p>
-                    <div class="floatL carbtn"><img src="../images/detailsIconcar.jpg" class="floatL" alt="加入购物车">加入购物车</div>
+                    <div class="checked checked1" id="checked1">-</div>
+                    <div class="checkedPrint" id="checkedPrint">1</div>
+                    <div class="checked  checked2" id="checked2">+</div></p>
+                    <div class="floatL carbtn" id="carbtn"><img src="../images/detailsIconcar.jpg" class="floatL" alt="加入购物车">加入购物车</div>
                     <div class="floatL addbtn"><img src="../images/detailsIconadd.jpg" class="floatL">加收藏</div>
 
                 </div>
@@ -193,15 +198,15 @@
                         <div class="addcarbtn">购买组合</div>
                     </div>
                 </div>
-                <div class="groupTop1">
+                <div class="groupTop1" id="groupTop1">
                     <ul>
                         <li class="groupTopActive">商品介绍</li>
                         <li >商品评价</li>
                     </ul>
                 </div>
                 <div class="introduce">
-                    <div class="introduceTop">
-                        <img src="../images/detailspresent.jpg">
+                    <div class="introduceTop" id="introduceTop">
+                        <img src="../images/detailspresent.jpg" >
                     </div>
                     <div class="evaluate">
                         <h3>商品评价</h3>
@@ -209,14 +214,24 @@
                             <span>100%</span>
                             <p>好评度</p>
                         </div>
-                        <div class="evaluateR">
-                            <ul>
-                                <li>好评（100%）<span class="redspan"></span></li>
-                                <li>中评（0.0%）<span></span></li>
-                                <li>差评（0.0%）<span></span></li>
-                            </ul>
-                        </div>
+                    <div class="evaluateR">
+                        <ul>
+                            <li>好评（100%）<span class="redspan"></span></li>
+                            <li>中评（0.0%）<span></span></li>
+                            <li>差评（0.0%）<span></span></li>
+                        </ul>
                     </div>
+                </div>
+                    <div class="groupTop1">
+                        <ul>
+                            <li class="groupTopActive">全部评价</li>
+                            <li >好评（356）</li>
+                            <li >中评（1）</li>
+                            <li >差评（0）</li>
+                        </ul>
+
+                    </div>
+                    <img src="../images/detailevaluate.jpg" alt="商品评价">
                 </div>
             </div>
         </div>
@@ -307,3 +322,6 @@
 </div>
 </body>
 </html>
+<script src="../js/jquery-1.8.3.js"></script>
+<script src="../js/top.js"></script>
+<script src="../js/details.js"></script>

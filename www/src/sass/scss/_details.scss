@@ -69,7 +69,18 @@
     letter-spacing: 2px;
   }
   @include setSize(961px, auto);
+  .floatTopImg{
+    position: absolute;
+    left: 310px;
+    top:48px;
+    z-index: 3;
+    @include setSize(480px, 480px);
+    img{
+      @include setSize(480px, 480px);
+    }
+  }
   .rightTop{
+    position: relative;
     p{
       line-height: 27px;
     }
@@ -84,6 +95,22 @@
       @include setSize(240px, 240px);
       box-shadow: 10px 10px 5px #d8d8d8;
       margin-right: 33px;
+      position: relative;
+      .searchImg{
+        @include setSize(29px, 35px);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url("../../images/headSearch.jpg") no-repeat;
+      }
+      .searchdiv{
+          @include setSize(40px, 40px,#000);
+          @include opacity(50);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+      }
     }
   }
 }
@@ -164,8 +191,10 @@
   li{
     float: left;
     text-align: center;
-    @include setSize(70px, 35px);
+    height: 35px;
+    padding: 0 10px;
     position: relative;
+    cursor: pointer;
     &:hover{
       color: #ff0000;
     }
@@ -174,6 +203,7 @@
   .groupTopActive{
     color: #ff0000;
     @include setSize(70px, 37px);
+    padding: 0 10px;
     border-top:2px solid #ff0000  ;
     border-right: 1px solid #e0e0e0 ;
     border-left: 1px solid #e0e0e0 ;
@@ -251,6 +281,8 @@
 }
 .introduce{
     .evaluate{
+      clear: both;
+      margin-top: 3 0px;
       @include setSize(959px, 159px);
       border: 1px solid #ccc;
       padding-top: 10px;
