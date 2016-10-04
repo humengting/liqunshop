@@ -145,7 +145,7 @@ function planChange(objUL,plan1){
 //倒计时
 function countDownTime(){
     //截止时间
-    var endTime = new Date("2016/10/4 12:00");
+    var endTime = new Date("2016/10/9 12:00");
     //var d = new Date();
     //d.setDate(d.getDate()+3);
     //console.log(d);

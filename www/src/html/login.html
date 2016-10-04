@@ -75,15 +75,15 @@
             </div>
         </div>
     </div>
-    <div class="main">
+    <div class="main" id="main">
         <form>
-            <p class="p1"><span>*</span>帐户名：</p><input class="inputbg" placeholder="邮箱/用户名/手机号"/>
-            <p><span>*</span>请设置密码：</p><input class="inputbg2"/>
-            <p><span>*</span>请确认密码：</p><input class="inputbg2"/>
-            <p class="p1"><span>*</span>验证码：</p><div class="change" id="change"></div>
-            <p><input class="validateBox marginL"/>看不清?<span class="blueClor" id="changeToo">&nbsp;换一张</span></p>
-            <p> <input type="checkbox" class="checkbox marginL">我已阅读并同意<a class="blueClor" href="#">《利群商城交易条款》</a></p>
-            <div class="btn marginL">立即注册</div>
+            <div class="p1"><p ><span>*</span>帐户名：</p><input class="inputbg" placeholder="邮箱/用户名/手机号" id="user"/></div>
+            <div><p><span>*</span>请设置密码：</p><input class="inputbg2"/></div>
+            <div><p><span>*</span>请确认密码：</p><input class="inputbg2"/></div>
+            <div><p class="p1"><span>*</span>验证码：</p><div class="change" id="change"></div></div>
+            <p><input class="validateBox marginL" id="validateBox"/>看不清?<span class="blueClor" id="changeToo">&nbsp;换一张</span></p>
+            <p> <input type="checkbox" class="checkbox marginL" id="checkbox">我已阅读并同意<a class="blueClor" href="#">《利群商城交易条款》</a></p>
+            <div class="btn marginL" id="loginBtn">立即注册</div>
         </form>
     </div>
     <div class="server server1"><img src="../images/loginIcon3.jpg"/> 在线客服 </div>
@@ -129,6 +129,7 @@
 </body>
 </html>
 <script src="../js/jquery-1.8.3.js"></script>
+<script src="../js/cookie.js"></script>
 <script src="../js/top.js"></script>
 <script src="../js/common.js"></script>
 <script src="../js/login.js"></script>
