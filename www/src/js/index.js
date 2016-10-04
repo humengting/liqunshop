@@ -199,10 +199,15 @@ $("#floatNav").bind( "mouseleave",function(){
 })
 
 $(window).scroll( function() {
-    document.title = $(this).scrollTop();
+    //document.title = $(this).scrollTop();
     if($(this).scrollTop() >= 1200){
         $("#stairs").css("display","block");
     }else{
         $("#stairs").css("display","none");
     }
+});
+$("#floatAd").css("display","block");
+$("#closeAd").click(function(){
+    $("#floatAd").css("display","none");
+    $("#lucency").css("display","none");
 });

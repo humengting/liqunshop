@@ -405,6 +405,12 @@ img, input, button {
   border: 1px solid #ccc;
   float: left;
   margin-bottom: 12px;
+  text-align: center;
+  line-height: 30px;
+  color: #ff0000;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: bold;
 }
 .main .p1 {
   margin-left: 30px;

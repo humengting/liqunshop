@@ -69,16 +69,26 @@
     letter-spacing: 2px;
   }
   @include setSize(961px, auto);
-  .floatTopImg{
+  .floatImgF{
+    overflow: hidden;
+    display: none;
+    @include setSize(240px, 240px);
     position: absolute;
-    left: 310px;
+    left: 320px;
     top:48px;
     z-index: 3;
-    @include setSize(480px, 480px);
-    img{
+    .floatTopImg{
       @include setSize(480px, 480px);
+
+      position: absolute;
+      top:0;
+      left: 0;
+      img{
+        @include setSize(480px, 480px);
+      }
     }
   }
+
   .rightTop{
     position: relative;
     p{
@@ -104,12 +114,12 @@
         background: url("../../images/headSearch.jpg") no-repeat;
       }
       .searchdiv{
-          @include setSize(40px, 40px,#000);
+          @include setSize(50px, 50px,#000);
           @include opacity(50);
         position: absolute;
         top: 0;
         left: 0;
-
+        display: none;
       }
     }
   }
