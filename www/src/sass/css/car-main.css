@@ -359,6 +359,15 @@ img, input, button {
 }
 .main .mainMiddle .mainMiddleli1 {
   background-color: #ffffff;
+  height: 104px;
+  line-height: 104px;
+  clear: both;
+}
+.main .mainMiddle .mainMiddleli1 img {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  vertical-align: middle;
 }
 .main .mainMiddle .mainMiddleli1 span {
   background-color: #ffffff;
@@ -377,6 +386,8 @@ img, input, button {
   height: 22px;
   background-color: #fff;
   border: 1px solid #ccc;
+  text-align: center;
+  line-height: 22px;
 }
 .main .mainMiddle .mainMiddleli1 .count .count2 {
   display: inline-block;

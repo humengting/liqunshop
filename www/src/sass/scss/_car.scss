@@ -24,6 +24,14 @@
    }
     .mainMiddleli1{
       background-color: #ffffff;
+      height: 104px;
+      line-height: 104px;
+
+      img{
+        @include setSize( 60px , 60px  );
+        vertical-align: middle;
+      }
+      clear: both;
       span{
         background-color: #ffffff;
       }
@@ -38,6 +46,8 @@
           display: inline-block;
           @include setSize( 40px , 22px  );
           border: 1px solid #ccc;
+          text-align: center;
+          line-height: 22px;
         }
           .count2{
             display: inline-block;

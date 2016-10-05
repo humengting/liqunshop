@@ -272,7 +272,7 @@
     color: #ffffff;
   }
   .groupPage{
-    @include setSize(778px, 200px);
+    @include setSize(800px, 200px);
     p{
       color: $brigtColor;
     }
