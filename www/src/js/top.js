@@ -12,7 +12,7 @@ $(function(){
         //$(".head .headInfo span:first").html("Hi");
         var user = $.cookie.getAll("user").user;
         //console.log(user)
-        $(".head .headInfo span:first").html("Hi,<span style='color: #0770C1'>"+user+"</span>欢迎来到利群商城！")
+        $(".head .headInfo span:first").html("Hi,<span style='color: #0770C1'>"+user+"</span>欢迎来到利群商城！");
     }
     console.log( $.cookie.getAll("user").user);
 

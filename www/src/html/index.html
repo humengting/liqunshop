@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="../sass/css/index-main.css" rel="stylesheet">
+    <link href="../css/jquery-ui.css" rel="stylesheet">
 </head>
 <body>
     <div id="lucency" class="lucency"></div>
@@ -45,7 +46,8 @@
                        <div class="searchTop">
                            <div>
                                <img src="../images/headSearch.jpg"/>
-                               <input type="text" placeholder="美赞臣">
+                               <input id="autocomplete"  placeholder="美赞臣" title="type &quot;a&quot;" >
+
                                <button>搜索</button>
                            </div>
                        </div>
@@ -1181,4 +1183,48 @@
 <script src="../js/jquery-1.8.3.js"></script>
 <script src="../js/cookie.js"></script>
 <script src="../js/top.js"></script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery-ui.js"></script>
 <script src="../js/index.js"></script>
+
+
+<script>
+    var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Phone",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme",
+        "手机",
+        "洗衣液",
+        "洗发水",
+        "香皂",
+        "洗衣机",
+        "洗面奶",
+        "香油",
+        "心相印",
+        "美赞臣"
+    ];
+    $( "#autocomplete" ).autocomplete({
+        source: availableTags
+    });
+</script>
